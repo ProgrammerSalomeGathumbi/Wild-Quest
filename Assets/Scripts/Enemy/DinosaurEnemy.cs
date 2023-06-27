@@ -71,22 +71,13 @@ public class DinosaurEnemy : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, animalLayer);
 
-        if (hit.collider != null)
-            animalHealth = hit.transform.GetComponent<Health>();
-
-        return hit.collider != null;
+         return hit.collider != null;
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
-    }
-
-    private void DamageAnimal()
-    {
-        if (PlayerInSight())
-            animalHealth.TakeDamage(damage);
     }
 
 }

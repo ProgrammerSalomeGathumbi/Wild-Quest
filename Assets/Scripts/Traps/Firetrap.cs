@@ -21,7 +21,7 @@ public class Firetrap : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
-    private void update()
+    private void Update()
     {
         if (animalHealth != null && active)
         {
