@@ -5,7 +5,10 @@ public class AnimalAttack : MonoBehaviour
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform woolPoint;
     [SerializeField] private GameObject[] woolballs;
-    
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource woolSoundEffect;
+
     private Animator anim;
     private AnimalMovement animalMovement;
     private float cooldownTimer = Mathf.Infinity;
@@ -26,7 +29,9 @@ public class AnimalAttack : MonoBehaviour
 
     private void Attack()
     {
+        
         anim.SetTrigger("attack");
+        woolSoundEffect.Play();
         cooldownTimer = 0;
 
         woolballs[FindWoolball()].transform.position = woolPoint.position;

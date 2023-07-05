@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagemnet;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -19,6 +19,10 @@ public class Health : MonoBehaviour
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
 
+    [Header("Sound")]
+    [SerializeField] private AudioSource deathSoundEffect;
+    [SerializeField] private AudioSource hurtSoundEffect;
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -34,6 +38,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
+            hurtSoundEffect.Play();
         }
         else
         {
@@ -46,6 +51,7 @@ public class Health : MonoBehaviour
                     component.enabled = false;
 
                 dead = true;
+                deathSoundEffect.Play();
             }
         }
     }

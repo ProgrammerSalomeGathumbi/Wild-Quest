@@ -6,6 +6,10 @@ public class AnimalMovement : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
@@ -47,7 +51,10 @@ public class AnimalMovement : MonoBehaviour
                 body.gravityScale = 7;
 
             if (Input.GetKey(KeyCode.Space))
+            {
                 Jump();
+
+            }
         }
         else
             wallJumpCooldown += Time.deltaTime;
@@ -59,6 +66,8 @@ public class AnimalMovement : MonoBehaviour
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
+
+            jumpSoundEffect.Play();
         }
         else if (onWall() && !isGrounded())
         {

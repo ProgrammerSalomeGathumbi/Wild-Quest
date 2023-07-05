@@ -19,6 +19,9 @@ public class DinosaurEnemy : MonoBehaviour
     [SerializeField] private LayerMask animalLayer;
     private float cooldownTimer = Mathf.Infinity;
 
+    [Header("Sound")]
+    [SerializeField] private AudioClip woolSound;
+
     //References
     private Animator anim;
     private Health animalHealth;
@@ -49,7 +52,7 @@ public class DinosaurEnemy : MonoBehaviour
     }
     private void SlashAttack()
     {
-
+        Sound.instance.PlaySound(woolSound);
         cooldownTimer = 0;
         slashes[FindSlashes()].transform.position = slashpoint.position;
         slashes[FindSlashes()].GetComponent<EnemyProjectile>().ActivateProjectile();

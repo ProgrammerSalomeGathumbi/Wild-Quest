@@ -8,6 +8,10 @@ public class Firetrap : MonoBehaviour
     [Header("Firetrap Timers")]
     [SerializeField] private float activationDelay;
     [SerializeField] private float activeTime;
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource firetrapSoundEffect;
+
     private Animator anim;
     private SpriteRenderer spriteRend;
 
@@ -35,6 +39,7 @@ public class Firetrap : MonoBehaviour
             animalHealth = collision.GetComponent<Health>();
             if (!triggered)
                 StartCoroutine(ActivateFiretrap());
+                
 
             if (active)
                 collision.GetComponent<Health>().TakeDamage(damage);
@@ -56,6 +61,7 @@ public class Firetrap : MonoBehaviour
 
         //Wait for delay, activate trap, turn on animation, return color back to normal
         yield return new WaitForSeconds(activationDelay);
+        firetrapSoundEffect.Play();
         spriteRend.color = Color.white; //turn the sprite back to its initial color
         active = true;
         anim.SetBool("activated", true);
