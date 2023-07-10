@@ -19,14 +19,14 @@ Click on this [link](https://play.unity.com/mg/other/game-build-79) to go to the
 ## Usage
 Use the following controls to play:
 
-Use arrow keys (left and right) to move the sheep character.
-Press the spacebar to jump.
+Use arrow keys (left and right) to move the sheep character.       
+Press the spacebar to jump.         
 Use the left mouse to  attack enemies.
-Collect fruits to increase your score and health.
-Defeat the dinosaur.    
+Collect fruits to increase your score and health.       
+Defeat the dinosaur.      
 
 ## Contributing
-Contributions to Wild Quest are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository. You can also fork the project and submit a pull request with your enhancements.
+Contributions to Wild Quest are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository. You can also fork the project and submit a pull request with your enhancements.      
 
 ## Licensing
 Wild Quest is released under the MIT License. Feel free to use, modify, and distribute the game as per the terms of the license.
