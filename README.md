@@ -2,6 +2,8 @@
 ## Introduction
 Wild Quest is a 2D platformer game created using Unity. In the game, the main character is a sheep fighting against a dinosaur and collecting fruits. The objective is to  defeat enemies and collect fruits.
 
+![image](https://github.com/ProgrammerSalomeGathumbi/Wild-Quest/assets/113690133/7716a12d-0bcc-40cd-8465-9967f15769a5)
+
 Deployed Site: [Wild Quest Game](https://play.unity.com/mg/other/game-build-79)
 
 Final Project Blog Article: Wild Quest: Exploring the Adventure
