@@ -10,7 +10,7 @@ Final Project Blog Article: Wild Quest: Exploring the Adventure
 
 Author: Salome Gathumbi
 
-LinkedIn: [Salome Gathumbi](https://play.unity.com/mg/other/game-build-79)
+LinkedIn: [Salome Gathumbi](https://www.linkedin.com/in/salome-gathumbi/)
 
 ## Installation
 To play Wild Quest, follow these steps:
