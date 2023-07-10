@@ -14,20 +14,17 @@ LinkedIn: [Salome Gathumbi](https://play.unity.com/mg/other/game-build-79)
 
 ## Installation
 To play Wild Quest, follow these steps:
+Click on this [link](https://play.unity.com/mg/other/game-build-79) to go to the Unity play site: 
 
-Clone the repository: git clone https://github.com/username/wild-quest.git
-Open the project in Unity.
-Set up the required configurations and dependencies.
-Build the game for your desired platform.
-Launch the game and start playing.
 ## Usage
-Once you have installed the game, use the following controls to play:
+Use the following controls to play:
 
 Use arrow keys (left and right) to move the sheep character.
 Press the spacebar to jump.
 Use the left mouse to  attack enemies.
 Collect fruits to increase your score and health.
-Defeat the dinosaur.
+Defeat the dinosaur.    
+
 ## Contributing
 Contributions to Wild Quest are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository. You can also fork the project and submit a pull request with your enhancements.
 
