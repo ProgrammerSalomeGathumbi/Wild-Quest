@@ -8,5 +8,6 @@ public class GameOver : MonoBehaviour
     private void OverScene()
     {
         SceneManager.LoadScene("GameOver");
+        // Load the "GameOver" scene
     }
 }
